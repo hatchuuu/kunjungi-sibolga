@@ -8,6 +8,9 @@ import { getSession } from "next-auth/react";
 export const metadata = {
   title: "Sibolga Web",
   description: "Kunjungi Kota Sibolga",
+  icons: {
+    icon: '/island.ico', 
+  },
 };
 
 export default async function RootLayout({ children }) {
