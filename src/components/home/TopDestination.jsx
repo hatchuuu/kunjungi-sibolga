@@ -16,7 +16,7 @@ const TopDestination = () => {
     const renderComponents = data.map((d, i) => (
         <CarouselItem key={i} className="group basis-1/3 h-[30vh] w-full transition-all duration-300 hover:basis-1/2 hover:h-[50vh] flex items-center">
             <div className=" h-full  rounded-lg w-full relative ">
-            <Image width={400} height={400} priority src={d.image} className='h-full w-full object-cover rounded-lg' />
+            <Image alt={d.title} width={400} height={400} priority src={d.image} className='h-full w-full object-cover rounded-lg' />
                 <div className="absolute inset-0  group-hover:scale-110 rounded-lg group-hover:opacity-100 opacity-0 transition-opacity duration-300">
                     <div className="absolute bottom-20 left-8">
                         <h1 className="text-white text-2xl font-bold">{d.title}</h1>
