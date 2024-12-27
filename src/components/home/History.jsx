@@ -33,7 +33,7 @@ const History = () => {
                             </div>
                             <div className='flex gap-5 items-center py-2 px-4 hover:bg-blue-100 duration-300 transition-opacity rounded-md border border-gray-300 hover:shadow-lg'>
                                 <Fish size={15} />
-                                <p>Dijuluki "Kota Ikan," surga bagi pecinta seafood.</p>
+                                <p>Dijuluki &quot;Kota Ikan&quot;, surga bagi pecinta seafood.</p>
                             </div>
                             <div className='flex gap-5 items-center py-2 px-4 hover:bg-blue-100 duration-300 transition-opacity rounded-md border border-gray-300 hover:shadow-lg'>
                                 <Waves size={15} />

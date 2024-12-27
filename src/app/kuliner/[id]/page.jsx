@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import prisma from '@/lib/prisma'
 import Commentar from '@/components/Commentar'
 import dayjs from 'dayjs'
+import Image from 'next/image'
 
 const KulinerPage = async ({ params: { id } }) => {
 
@@ -40,7 +41,7 @@ const KulinerPage = async ({ params: { id } }) => {
           </div>
           <section className='flex justify-around items-center gap-10'>
             <div className='relative h-[40vh] w-full aspect-[5/3] rounded-[1rem]'>
-              <img src={`/image/${data?.gambar}`} alt={data?.nama} className='w-full h-full object-cover rounded-[1rem]' />
+            <Image width={400} height={400} priority src={`/image/${data?.gambar}`} alt={data?.nama} className='w-full h-full object-cover rounded-[1rem]' />
             </div>
             <div className='flex flex-col gap-5 rounded-lg p-8 border border-gray-400 shadow-lg'>
               <p className='text-2xl font-bold'>Deskrisi Singkat</p>

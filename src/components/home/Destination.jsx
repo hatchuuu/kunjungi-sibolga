@@ -37,6 +37,7 @@ const Destination = () => {
                         src={`/image/${item.image}`}
                         height={400}
                         width={400}
+                        alt={item.title}
                         priority
                         className="h-full w-full object-cover rounded-lg"
                     />

@@ -3,6 +3,7 @@ import MapSibolga from '@/components/maps/MapSibolga'
 import prisma from '@/lib/prisma'
 import Commentar from '@/components/Commentar'
 import dayjs from 'dayjs'
+import Image from 'next/image'
 
 const Page = async ({ params: { id } }) => {
 
@@ -49,7 +50,7 @@ const Page = async ({ params: { id } }) => {
                         <p className="text-lg text-gray-600">{data?.lokasi}</p>
                     </div>
                     <div className="w-full h-full relative">
-                        <img src={`/image/${data?.gambar}`} className="w-full h-full object-cover saturate-200 rounded-[1rem]" />
+                    <Image width={400} height={400} priority src={`/image/${data?.gambar}`} className="w-full h-full object-cover saturate-200 rounded-[1rem]" />
                     </div>
                 </section>
 

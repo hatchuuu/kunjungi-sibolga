@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -12,7 +13,7 @@ const Food = () => {
     const renderComponents = data.map((d, i) => (
         <div key={i} className="flex flex-col gap-5 items-center justify-center group ">
             <Link href={d.link} className="relative h-64 w-64 p-2 rounded-full group-hover:scale-110 group-hover:shadow-md transition-transform duration-300  border border-gray-400">
-                <img src={d.image} alt={d.title} className='object-cover h-full w-full rounded-full' />
+            <Image width={400} height={400} prioritysrc={d.image} alt={d.title} className='object-cover h-full w-full rounded-full' />
             </Link>
             <p className="font-bold text-xl group-hover:text-2xl transition-transform duration-300">{d.title}</p>
             <p className="text-center text-base">{d.desc}</p>

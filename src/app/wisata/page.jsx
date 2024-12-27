@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer'
 import  prisma from '@/lib/prisma'
 import { Star } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -10,7 +11,7 @@ const DaftarPariwisata = async () => {
   const renderComponents = data?.map((items, i) => (
     <Link href={`/wisata/${items.id}`} key={i} className='w-full h-full border border-gray-600 shadow-md bg-white flex flex-col items-center rounded-2xl gap-5 p-5'>
       <div className="relative w-full h-full rounded-[1rem] ">
-        <img src={`/image/${items.gambar}`} alt={items.nama} className='w-full h-full object-cover rounded-[1rem]' />
+      <Image width={400} height={400} priority src={`/image/${items.gambar}`} alt={items.nama} className='w-full h-full object-cover rounded-[1rem]' />
       </div>
       <div className='flex flex-col items-center w-full gap-2'>
         <div className='flex justify-between w-full'>
