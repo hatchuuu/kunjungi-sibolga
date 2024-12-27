@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <defs>
+    <!-- Pola plus kecil -->
+    <pattern id="plus-pattern" width="5" height="5" patternUnits="userSpaceOnUse">
+      <text x="1.5" y="3.5" fill="#1E3A8A" font-size="3" font-family="Arial" font-weight="bold">+</text>
+    </pattern>
+    <!-- Gradien biru ke transparan -->
+    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="1" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Latar putih dengan pola -->
+  <rect fill="#ffffff" width="100%" height="100%" />
+  <rect fill="url(#plus-pattern)" width="100%" height="100%" />
+  <rect fill="url(#gradient)" width="100%" height="100%" />
+</svg>
